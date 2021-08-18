@@ -15,9 +15,15 @@
     opacity: 0.8;
 }
 
+.btn.btn--active {
+    color: white ;
+    background-color: tomato;
+    position: relative;
+}
+
+
 .heading {
     padding-top: 7rem;
-    /* width: 95%; */
     border-bottom: 0.2rem solid rgba(0,0,0,0.3);
     margin: 0 30px;
 }
@@ -35,12 +41,12 @@
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    margin: 0 -1rem;
+    margin: 0 -2rem;
 }
 
 .col-4 {
     width: 33.33%;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 

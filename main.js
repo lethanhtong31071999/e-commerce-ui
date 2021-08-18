@@ -43,3 +43,36 @@ for (const img of smallImgs) {
     bigImageElement.setAttribute("src", img.getAttribute("src").toString());
   };
 }
+
+// Product Gallery
+const controlsChildrenElements = document.querySelector(
+  ".gallery .gallery-wrapper .controls"
+).children;
+const imageChildrenContainerElements = document.querySelector(
+  ".gallery .gallery-wrapper .image-container"
+).children;
+
+for (const element of controlsChildrenElements) {
+  element.addEventListener("click", handleNavGallery);
+}
+
+function handleNavGallery(e) {
+  for (const element of controlsChildrenElements) {
+    element.classList.remove("btn--active");
+  }
+  this.classList.add("btn--active");
+  const filter = this.getAttribute("data-filter");
+  handleFillterGallery(filter);
+}
+
+function handleFillterGallery(filter) {
+  for (const boxParent of imageChildrenContainerElements) {
+    const boxGalleryElement = boxParent.firstElementChild;
+    boxGalleryElement.style.display = "block";
+    if (filter === "all") continue;
+    const check = boxGalleryElement.classList.contains(filter);
+    if (!check) {
+      boxGalleryElement.style.display = "none";
+    }
+  }
+}

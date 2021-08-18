@@ -422,3 +422,96 @@ header .header-2 #menu {
 .feature .feature-wrapper .feature-body .content a button {
     margin-top: 2rem;
 }
+
+/* Gallery Section */
+.gallery {
+    background-color: var(--backgroundGrey);
+    padding: 20px;
+}
+
+.gallery .gallery-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.gallery .gallery-wrapper .controls {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 3rem -1.5rem;
+    padding: 0 30px;
+}
+
+.gallery .gallery-wrapper .controls li {
+    margin: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3);
+}
+
+.gallery .gallery-wrapper .image-container {
+    padding: 0 30px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gallery .gallery-wrapper .image-container .box {
+    border: 2px solid var(--blue);
+    border-radius: 15px;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.gallery .gallery-wrapper .image-container .box .img {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery .gallery-wrapper .image-container .box .img:hover img {
+    animation: itemRotate 3s ease-in-out infinite;
+}
+
+@keyframes itemRotate {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallery .gallery-wrapper .image-container .box img{
+    width: 100%;
+    height: var(--height-box);
+    object-fit: contain;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in;
+}
+
+.gallery .gallery-wrapper .image-container .box .info h3 {
+    font-size: 2rem;
+    color: var(--blue);
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery .gallery-wrapper .image-container .box .info .sub-info {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+
+.gallery .gallery-wrapper .image-container .box .info .sub-info .price {
+    color: #ff3300;
+    font-size: 2rem;
+}
+
+.gallery .gallery-wrapper .image-container .box .info .stars {
+    color: orange;
+    font-size: 1.5rem;
+    text-align: center;
+}

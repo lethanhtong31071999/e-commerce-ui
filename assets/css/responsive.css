@@ -12,6 +12,10 @@
     .feature .feature-wrapper {
         width: 100%;
     }
+
+    .gallery .gallery-wrapper {
+        width: 100%;
+    }
 }
 
 /* Ipad Pro */
