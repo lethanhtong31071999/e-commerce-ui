@@ -1,0 +1,47 @@
+.btn {
+    height: 4rem;
+    width: 14rem;
+    background: var(--blue);
+    color: white;
+    font-size: 2rem;
+    cursor:  pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.heading {
+    padding-top: 7rem;
+    /* width: 95%; */
+    border-bottom: 0.2rem solid rgba(0,0,0,0.3);
+    margin: 0 30px;
+}
+
+.heading span {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem 6rem;
+    color: white;
+    background: var(--blue);
+    border-top-right-radius: 3rem;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0 -1rem;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding: 1rem;
+}
+
+
+
