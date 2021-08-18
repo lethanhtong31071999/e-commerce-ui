@@ -472,15 +472,7 @@ header .header-2 #menu {
 }
 
 .gallery .gallery-wrapper .image-container .box .img:hover img {
-    animation: itemRotate 3s ease-in-out infinite;
-}
-
-@keyframes itemRotate {
-    from {
-        transform: rotate(0);
-    } to {
-        transform: rotate(360deg);
-    }
+    transform: scale(1.15);
 }
 
 .gallery .gallery-wrapper .image-container .box img{
