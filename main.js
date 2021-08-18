@@ -68,11 +68,11 @@ function handleNavGallery(e) {
 function handleFillterGallery(filter) {
   for (const boxParent of imageChildrenContainerElements) {
     const boxGalleryElement = boxParent.firstElementChild;
-    boxGalleryElement.style.display = "block";
+    boxParent.style.display = "block";
     if (filter === "all") continue;
     const check = boxGalleryElement.classList.contains(filter);
     if (!check) {
-      boxGalleryElement.style.display = "none";
+      boxParent.style.display = "none";
     }
   }
 }
