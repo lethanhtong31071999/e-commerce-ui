@@ -442,6 +442,7 @@ header .header-2 #menu {
     align-items: center;
     margin: 3rem -1.5rem;
     padding: 0 30px;
+    flex-wrap: wrap;
 }
 
 .gallery .gallery-wrapper .controls li {

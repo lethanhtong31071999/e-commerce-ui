@@ -151,4 +151,9 @@
         text-align: center;
     }
 
+    .gallery .gallery-wrapper .controls li {
+        width: 35%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
 }
