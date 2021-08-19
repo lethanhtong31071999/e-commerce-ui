@@ -16,6 +16,14 @@
     .gallery .gallery-wrapper {
         width: 100%;
     }
+
+    .deal .deal-wrapper {
+        width: 100%;
+    }
+
+    .newsletter .newsletter-wrapper {
+        width: 100%;
+    }
 }
 
 /* Ipad Pro */
@@ -87,6 +95,28 @@
         font-size: 2.5rem;
         padding: 0 2rem;
     }
+
+    .deal-wrapper .icons-container .icon-list .icon-item {
+        width: calc(100% / 2 - 2rem);
+    }
+
+    .deal-wrapper .box-container .box {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .newsletter-wrapper form {
+        flex-direction: column;
+    }
+
+    .newsletter-wrapper form input[name=email] {
+        margin-right: 0rem;
+    }
+
+    .newsletter-wrapper form input {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
 }
 
 /* Tablet */
@@ -108,6 +138,10 @@
     .home .home-slider .item .content p {
         font-size: 2rem;
         width: auto;
+    }
+
+    .deal-wrapper .icons-container .icon-list .icon-item {
+        width: calc(100% / 2 - 2rem);
     }
 }
 
@@ -155,5 +189,15 @@
         width: 35%;
         padding: 1rem;
         margin-bottom: 1rem;
+    }
+
+    .deal-wrapper .icons-container .icon-list .icon-item {
+        width: calc(100% - 2rem);
+        margin: 1rem 0;
+    }
+
+    .newsletter-wrapper form {
+        width: 100%;
+        flex-direction: column;
     }
 }

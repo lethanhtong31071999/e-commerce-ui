@@ -432,8 +432,10 @@ header .header-2 #menu {
 .gallery .gallery-wrapper {
     width: 1200px;
     margin: 0 auto;
-    min-height: 100vh;
+    height: calc(100% - 40px);
     background-color: white;
+    min-height: 100vh;
+
 }
 
 .gallery .gallery-wrapper .controls {
@@ -507,4 +509,155 @@ header .header-2 #menu {
     color: orange;
     font-size: 1.5rem;
     text-align: center;
+}
+
+
+/* Deal section */
+
+.deal {
+    padding: 20px;
+    background-color: var(--backgroundGrey);
+}
+
+.deal-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 40px);
+    background-color: white;
+}
+
+.deal-wrapper .box-container {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 -2rem;
+}
+
+.deal-wrapper .box-container .box {
+    overflow: hidden;
+    border-radius: 15px;
+    width: calc(100% / 2 - 4rem);
+    margin: 2rem;
+    height: 25rem;
+    position: relative;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3);
+}
+
+.deal-wrapper .box-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.deal-wrapper .box-container .box .content {
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+}
+
+.deal-wrapper .box-container .box .content h3 {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.3);
+}
+
+.deal-wrapper .box-container .box .content p {
+    font-size: 2rem;
+    color: white;
+    
+}
+
+.deal-wrapper .box-container .box .content .btn {
+    margin: 1.4rem 0;
+}
+
+.deal-wrapper .icons-container{
+    padding: 0 30px;
+}
+
+.deal-wrapper .icons-container .icon-list {
+    list-style: none; 
+    display: flex;
+    flex-flow: row wrap;  
+    margin: 0 -1rem;
+}
+
+.deal-wrapper .icons-container .icon-list .icon-item {
+    text-align: center;
+    width: calc(100% / 4 - 2rem);
+    margin: 1rem;
+    border-radius: 15px;
+    border: 2px solid var(--blue);
+    padding: 1rem;
+}
+
+.deal-wrapper .icons-container .icon-list .icon-item i {
+    font-size: 4rem;
+    color: var(--blue);
+}
+
+.deal-wrapper .icons-container .icon-list .icon-item h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.deal-wrapper .icons-container .icon-list .icon-item p {
+    color: #666;
+    font-size: 1.3rem;
+}
+
+/* Letter section */
+.newsletter {
+    background: linear-gradient(var(--blue), var(--blue));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-blend-mode: multiply;
+    padding: 4rem 0;
+}
+
+.newsletter-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.newsletter-wrapper h1 {
+    color: var(--blue);
+    font-size: 4rem;
+}
+
+.newsletter-wrapper p {
+    color: var(--blue);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.newsletter-wrapper form {
+    /* height: 5.5rem; */
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter-wrapper form input[name=email] {
+    flex: 1;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--blue);
+    outline: none;
+    font-size: 1.3rem;
 }
